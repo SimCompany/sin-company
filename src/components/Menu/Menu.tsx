@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Link, Text } from "@chakra-ui/react";
 
 
 
@@ -12,15 +12,15 @@ export default function Menu() {
         LOGO
       </Box>
       <HStack spacing='8'>
-        <Text>
+        <Link>
           primeiro
-        </Text>
-        <Text>
+        </Link>
+        <Link>
           segundo
-        </Text>
-        <Text>
+        </Link>
+        <Link>
           terceiro
-        </Text>
+        </Link>
       </HStack>
     </Flex>
   )

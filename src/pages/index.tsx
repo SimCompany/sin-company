@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
 import Image from 'next/image'
 import FormElement from "../components/Form/Form";
-import Background from './../img/index/fundo01.jpg'
+import Background from '../public/fundo01.jpg'
 import Atendente from './../img/index/sistema-atendentes-call-center.png'
 
 import H2 from "../components/Texts/H2";
@@ -19,7 +19,7 @@ import { Icon } from "@chakra-ui/react";
 export default function Home() {
 
   return (
-    <main style={{ maxWidth: '1950px', margin: '0 auto' }}>
+    <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
       <Box
         position='relative'
         zIndex={-1}
@@ -29,19 +29,21 @@ export default function Home() {
         <Grid
           gridTemplateColumns='55% 45%'
           w='100%'
-          maxW='80%'
-          mx='10%'
+          maxW='70%'
+          mx='15%'
           position='absolute'
           bottom='0'>
-          <Box pt='20'>
+          <Box pt='20' maxW='93%'>
+
+
             <Text
-              fontSize='45'
+              fontSize='40'
               color='white'
               lineHeight={1}
               fontWeight='semibold'
             >CONHEÇA O DIFERENCIAL DO</Text>
             <Text
-              fontSize='80'
+              fontSize='70'
               lineHeight={1}
               color='Green.500'
               my='1'
@@ -54,7 +56,7 @@ export default function Home() {
               px='2'
               color='white'
               fontWeight='semibold'
-              fontSize='28'
+              fontSize='25'
             >
               CENTRAL TELEFÔNICA | VÍDEO | CHAT AO VIVO
             </Text>
@@ -72,13 +74,12 @@ export default function Home() {
         </Grid>
       </Box>
 
-
-      <Grid mt='-100' gridTemplateColumns='1fr 1fr' w='100%' maxW='80%' mx='10%' gridColumnGap='5%'>
+      <Grid mt='-100' gridTemplateColumns='1fr 1fr' w='100%' maxW='70%' mx='15%' gridColumnGap='5%'>
         <Box>
           <FormElement />
         </Box>
         <Box mt='40'>
-          <Text fontSize='4xl' fontWeight='bold' my='10' color='Green.300'>3 motivos para mudar agora para o PABX em nuvem</Text>
+          <H2 mb='10'>3 motivos para mudar agora para o PABX em nuvem</H2>
           <Box my='2'>
             <Text color='Green.300' fontSize='2xl' fontWeight='bold' my='1' >INVISTA</Text>
             <Text>
@@ -192,8 +193,8 @@ export default function Home() {
 
           <Flex>
             <Icon as={TiSocialFacebookCircular} color='white' fontSize='30' />
-            <Icon as={RiInstagramLine} mt='0.5' color='white' fontSize='26'/>
-            <Icon as={TiSocialLinkedinCircular} color='white' fontSize='30'/>
+            <Icon as={RiInstagramLine} mt='0.5' color='white' fontSize='26' />
+            <Icon as={TiSocialLinkedinCircular} color='white' fontSize='30' />
           </Flex>
         </GridItem>
       </Grid>
