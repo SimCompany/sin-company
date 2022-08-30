@@ -7,10 +7,10 @@ interface H3Props extends TextProps {
 
 
 
-export default function H3({ children, ...rest }: H3Props) {
+export default function H4({ children, ...rest }: H3Props) {
 
   return (
-    <Text as='h3' fontSize={{ base: '1xl', md: '2xl', lg: '3xl' }} letterSpacing={0} fontWeight='extrabold' color='Blue.800' {...rest}>
+    <Text as='h4' fontSize={{base:'xl', md:'1xl', lg:'2xl'}}letterSpacing={0} fontWeight='bold' color='Green.300' {...rest}>
       {children}
     </Text>
   )

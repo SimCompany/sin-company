@@ -10,8 +10,8 @@ export default function ButtonChakra({ children, ...rest }: ButtonChakraProps) {
 
   return (
     <ButtonaChakra _hover={{
-      'bgColor':'red.600'
-    }} colorScheme='Red' color='white' fontSize='24' borderRadius='8' {...rest}>
+      'bgColor': 'red.600'
+    }} colorScheme='Red' color='white' fontSize={{ base: '16px', sm: '18px', md: '18px', lg: '20px', xl: '24px' }} borderRadius='8' {...rest}>
       {children}
     </ButtonaChakra>
   )

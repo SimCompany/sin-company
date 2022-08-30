@@ -12,7 +12,7 @@ export default function InputForm({ name, ...rest }: InputFormProps, ref: any) {
       id={name}
       name={name}
       variant='outline'
-      focusBorderColor='green.800'
+      focusBorderColor='Blue.800'
       {...rest}
       bgColor='white' />
   )
